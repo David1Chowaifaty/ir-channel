@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <title>Channel manager</title>
+    <script src="dist/collection/assets/scripts/jquery.min.js"></script>
+    <script src="dist/collection/assets/scripts/daterangepicker/moment.min.js"></script>
+    <script src="dist/collection/assets/scripts/daterangepicker/daterangepicker.js"></script>
+    <script src="dist/collection/assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="dist/collection/assets/scripts/inputmask/jquery.inputmask.js"></script>
+    <script src="dist/collection/assets/scripts/toastr/toastr.min.js"></script>
+    <script type="module" src="dist/ir-webcmp/ir-webcmp.esm.js"></script>
+    <link rel="stylesheet" href="dist/collection/assets/scripts/daterangepicker/daterangepicker.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <ir-common></ir-common>
+    <ir-channel language="en" baseurl="https://gateway.igloorooms.com/IR"></ir-channel>
+    <link rel="stylesheet" href="assets/scripts/toastr/toastr.css" type="text/css">
+    <script>
+        const irchannel = document.querySelector('ir-channel');
+        function init() {
+            login().then((ticket) => {
+                irchannel.propertyid = "42";
+                irchannel.ticket = ticket
+            })
+        }
+        // (async () => {
+        //     const ticket = await login()
+        //     // console.log("ticket", ticket)
+
+        // })()
+        init()
+    </script>
+</body>
+
+</html>
