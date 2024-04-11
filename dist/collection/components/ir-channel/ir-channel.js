@@ -10,7 +10,7 @@ export class IrChannel {
     constructor() {
         this.roomService = new RoomService();
         this.channelService = new ChannelService();
-        this.ticket = '';
+        this.ticket = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTQwNDAyNjMsIkNMQUlNLTAxIjoicGM1VTVydTMxamM9IiwiQ0xBSU0tMDIiOiI5UStMQm93VTl6az0iLCJDTEFJTS0wMyI6Ilp3Tys5azJoTzUwPSIsIkNMQUlNLTA0IjoicUxHWllZcVA3SzNPNE9IMXpvZHovVG5vNnlEVlMvdm1wSDU4aDFsU0psQ1VnalRRRXNlNnU3QUo4V1c3Z2IvaGtURU5QTU1yV0NkVmEyZjFqZDVqcFZ5WlhWMTMwL3BIMysxdlA5ZGkxMzExMjRSaDdNdzNERDZSZmxmR1NPdlBSVXBET0IwdlZGRkU1NVRueEc4YXA3ZVo0alpzYWRVQlNPdmxXeFJHYzFxclkxUHJVSldHYlZDbXZyQ01YWEdZRTRGWWFIR1VTUFoza2I0L3Y5VHJrZz09In0.RdVCamw6xkx4tWvgXvELHf28j3OzcnrpJWOPwt8wbdg';
         this.propertyid = undefined;
         this.language = undefined;
         this.baseurl = undefined;
@@ -148,12 +148,10 @@ export class IrChannel {
                         this.openModal();
                     }
                 }, key: a.id + '_item', class: `dropdown-item my-0 ${a.id === 'remove' ? 'danger' : ''}`, type: "button" }, a.icon(), a.name), index < actions(locales.entries).length - 1 && h("div", { key: a.id + '_divider', class: "dropdown-divider my-0" }))))))))));
-        }))), channels_data.connected_channels.length === 0 && h("p", { class: "text-center" }, (_g = locales.entries) === null || _g === void 0 ? void 0 : _g.Lcz_NoChannelsAreConnected))), h("ir-sidebar", {
-            // sidebarStyles={{
-            //   width: '60rem',
-            // }}
-            showCloseButton: false, onIrSidebarToggle: this.handleSidebarClose.bind(this), open: this.channel_status !== null
-        }, this.channel_status && (h("ir-channel-editor", { slot: "sidebar-body", ticket: this.ticket, class: "p-1", channel_status: this.channel_status, onCloseSideBar: this.handleSidebarClose.bind(this) }))), h("ir-modal", { modalTitle: (_h = this.modal_cause) === null || _h === void 0 ? void 0 : _h.title, modalBody: (_j = this.modal_cause) === null || _j === void 0 ? void 0 : _j.message, ref: el => (this.irModalRef = el), rightBtnText: (_k = locales.entries) === null || _k === void 0 ? void 0 : _k.Lcz_Confirm, leftBtnText: (_l = locales.entries) === null || _l === void 0 ? void 0 : _l.Lcz_Cancel, onCancelModal: this.handleCancelModal.bind(this), rightBtnColor: (_o = (_m = this.modal_cause) === null || _m === void 0 ? void 0 : _m.main_color) !== null && _o !== void 0 ? _o : 'primary', onConfirmModal: this.handleConfirmClicked.bind(this) })));
+        }))), channels_data.connected_channels.length === 0 && h("p", { class: "text-center" }, (_g = locales.entries) === null || _g === void 0 ? void 0 : _g.Lcz_NoChannelsAreConnected))), h("ir-sidebar", { sidebarStyles: {
+                // width: '60rem',
+                padding: '0',
+            }, showCloseButton: false, onIrSidebarToggle: this.handleSidebarClose.bind(this), open: this.channel_status !== null }, this.channel_status && (h("ir-channel-editor", { slot: "sidebar-body", ticket: this.ticket, channel_status: this.channel_status, onCloseSideBar: this.handleSidebarClose.bind(this) }))), h("ir-modal", { modalTitle: (_h = this.modal_cause) === null || _h === void 0 ? void 0 : _h.title, modalBody: (_j = this.modal_cause) === null || _j === void 0 ? void 0 : _j.message, ref: el => (this.irModalRef = el), rightBtnText: (_k = locales.entries) === null || _k === void 0 ? void 0 : _k.Lcz_Confirm, leftBtnText: (_l = locales.entries) === null || _l === void 0 ? void 0 : _l.Lcz_Cancel, onCancelModal: this.handleCancelModal.bind(this), rightBtnColor: (_o = (_m = this.modal_cause) === null || _m === void 0 ? void 0 : _m.main_color) !== null && _o !== void 0 ? _o : 'primary', onConfirmModal: this.handleConfirmClicked.bind(this) })));
     }
     static get is() { return "ir-channel"; }
     static get encapsulation() { return "scoped"; }
@@ -185,7 +183,7 @@ export class IrChannel {
                 },
                 "attribute": "ticket",
                 "reflect": false,
-                "defaultValue": "''"
+                "defaultValue": "'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MTQwNDAyNjMsIkNMQUlNLTAxIjoicGM1VTVydTMxamM9IiwiQ0xBSU0tMDIiOiI5UStMQm93VTl6az0iLCJDTEFJTS0wMyI6Ilp3Tys5azJoTzUwPSIsIkNMQUlNLTA0IjoicUxHWllZcVA3SzNPNE9IMXpvZHovVG5vNnlEVlMvdm1wSDU4aDFsU0psQ1VnalRRRXNlNnU3QUo4V1c3Z2IvaGtURU5QTU1yV0NkVmEyZjFqZDVqcFZ5WlhWMTMwL3BIMysxdlA5ZGkxMzExMjRSaDdNdzNERDZSZmxmR1NPdlBSVXBET0IwdlZGRkU1NVRueEc4YXA3ZVo0alpzYWRVQlNPdmxXeFJHYzFxclkxUHJVSldHYlZDbXZyQ01YWEdZRTRGWWFIR1VTUFoza2I0L3Y5VHJrZz09In0.RdVCamw6xkx4tWvgXvELHf28j3OzcnrpJWOPwt8wbdg'"
             },
             "propertyid": {
                 "type": "number",

@@ -403,7 +403,7 @@ const IrDatePicker = class {
         });
     }
     render() {
-        return (index.h(index.Host, { key: '0d6cf5576729c597cac56179683a2123e579b781' }, index.h("input", { key: 'ce33ffd58b812fbb8eb89ba851a1eb2512b0e1b0', class: "date-range-input", type: "text", disabled: this.disabled })));
+        return (index.h(index.Host, { key: 'cf1b3b26de5695559e1b833ce76b039ca6f20ac4' }, index.h("input", { key: 'cd7b6b58e5230095126d4983f1069f20623155b0', class: "date-range-input", type: "text", disabled: this.disabled })));
     }
     get element() { return index.getElement(this); }
 };

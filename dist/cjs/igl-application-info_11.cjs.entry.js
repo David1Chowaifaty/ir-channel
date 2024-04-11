@@ -1638,7 +1638,7 @@ const IrInterceptor = class {
         return Promise.reject(error);
     }
     render() {
-        return (index.h(index.Host, { key: '539d3eaf1d89939b98a7cd64d70f096806ee3131' }, this.isLoading && (index.h("div", { class: "loadingScreenContainer" }, index.h("div", { class: "loaderContainer" }, index.h("span", { class: "loader" }))))));
+        return (index.h(index.Host, { key: '46eb8e52d3177a2a896d6d890c1c02b607236bd2' }, this.isLoading && (index.h("div", { class: "loadingScreenContainer" }, index.h("div", { class: "loaderContainer" }, index.h("span", { class: "loader" }))))));
     }
 };
 IrInterceptor.style = IrInterceptorStyle0;
@@ -1672,7 +1672,7 @@ const IrToast = class {
         }
     }
     render() {
-        return index.h(index.Host, { key: 'cd88b9934433c7ca4f3a9bb349187c6e7ab9f71b' });
+        return index.h(index.Host, { key: 'e0e67252a8759bb24081a31ce40e5a4aa59aa9b7' });
     }
     get element() { return index.getElement(this); }
 };

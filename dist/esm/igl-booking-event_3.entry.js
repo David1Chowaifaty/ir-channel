@@ -980,7 +980,7 @@ const IrPopover = class {
         });
     }
     render() {
-        return (h(Host, { key: 'e7ee6690aed1cbddeb1d74ac7a02d2292b6f245c', style: { '--ir-popover-left': this.irPopoverLeft } }, h("p", { key: 'ec8250ab7bbab11b246b43d5a5871796bfc09ff0', class: "popover-title", onMouseLeave: this.handleMouseLeave, onMouseEnter: this.handleMouseEnter }, this.popoverTitle), this.showPopover && this.isHovered && (h("div", { "data-state": "show", class: "popover-container" }, this.popoverTitle))));
+        return (h(Host, { key: '812f1a4a33727a83e767959c7ab842720d0ab793', style: { '--ir-popover-left': this.irPopoverLeft } }, h("p", { key: 'ced34ae33ca4b784bbe3825e84b034b78c8d7574', class: "popover-title", onMouseLeave: this.handleMouseLeave, onMouseEnter: this.handleMouseEnter }, this.popoverTitle), this.showPopover && this.isHovered && (h("div", { "data-state": "show", class: "popover-container" }, this.popoverTitle))));
     }
     get el() { return getElement(this); }
 };
